@@ -1,51 +1,63 @@
 Job Application Tracker API 🚀
 
-A scalable and secure backend system for tracking job applications. This project focuses on backend architecture, relational database design, and session-based authentication, built as part of my backend engineering practice 
+A secure and scalable backend system designed to help users record, manage, and analyze their job applications. This project demonstrates strong backend fundamentals including RESTful API design, session-based authentication, relational database modeling, and UUID-based architecture.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📌 Project Overview
 
 The Job Application Tracker allows users to:
 
 Register and log in securely
-Apply for jobs
-Track application status
-View analytics of their applications
+Add and manage job applications applied through external platforms
+Update and track application status (Applied, Interview, Selected, Rejected)
+Delete application records
+View analytics such as total applications and status-wise distribution
 
-The system is built using Node.js, Express, and PostgreSQL with a normalized relational schema and UUID-based identifiers.
+The system is built using Node.js, Express.js, and PostgreSQL with a normalized relational schema and UUID-based identifiers to efficiently handle multiple users and growing data.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🚀 Features
 
 🔐 Authentication & Security
 
 Session-based authentication using express-session
-Password hashing with bcrypt
-Environment variable management using dotenv
-UUID-based primary keys for enhanced security and scalability
+Secure password hashing with bcrypt
+Environment configuration using dotenv
+UUID-based primary keys for improved security and scalability
+Protected routes for authenticated users
 
 🗄️ Database & Data Integrity
 
 PostgreSQL relational database
-Fully normalized schema
+Fully normalized schema design
 Foreign key constraints to maintain relationships
 
-SQL JOINs to fetch combined data from:
+-Efficient SQL JOIN queries to fetch combined data from:
 
-Users
-Jobs
-Companies
-Applications
+ Users
+ Companies
+ Jobs
+ Applications
 
 📊 Application Management
 
-.Apply to jobs
-.Update application status
-(Applied, Interview, Selected, Rejected)
-.Delete applications
-.View statistics grouped by status
+Add and manage job application records
+
+Update application status:
+Applied
+Interview
+Selected
+Rejected
+Delete applications
+
+View statistics grouped by status
 
 ⚙️ RESTful API
 
-Complete CRUD operations following REST principles.
+Clean REST architecture
+Full CRUD operations
+Structured routes and middleware
+Error handling and validation
 
 🛠️ Tech Stack
 
@@ -54,5 +66,4 @@ Runtime	Node.js
 Framework	Express.js
 Database	PostgreSQL
 Authentication	Express-session, Bcrypt
-Utilities	UUID, Dotenv 
-
+Utilities	UUID, Dotenv
