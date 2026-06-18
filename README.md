@@ -1,69 +1,58 @@
-Job Application Tracker API 🚀
+# Job Application Tracker API 🚀
 
-A secure and scalable backend system designed to help users record, manage, and analyze their job applications. This project demonstrates strong backend fundamentals including RESTful API design, session-based authentication, relational database modeling, and UUID-based architecture.
+A backend application that helps users track and manage their job applications in one place. Users can securely register, log in, add job applications, update their application status, and view basic application statistics.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📌 Project Overview
+## Features
 
-The Job Application Tracker allows users to:
+### Authentication & Security
 
-Register and log in securely
-Add and manage job applications applied through external platforms
-Update and track application status (Applied, Interview, Selected, Rejected)
-Delete application records
-View analytics such as total applications and status-wise distribution
+* User registration and login
+* Session-based authentication
+* Password hashing using Bcrypt
+* Protected routes for authorized users
+* UUID-based unique identifiers
 
-The system is built using Node.js, Express.js, and PostgreSQL with a normalized relational schema and UUID-based identifiers to efficiently handle multiple users and growing data.
+### Job Application Management
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-🚀 Features
+* Add new job applications
+* Update application status
+* Delete application records
+* Track application progress through different stages:
 
-🔐 Authentication & Security
+  * Applied
+  * Interview
+  * Selected
+  * Rejected
 
-Session-based authentication using express-session
-Secure password hashing with bcrypt
-Environment configuration using dotenv
-UUID-based primary keys for improved security and scalability
-Protected routes for authenticated users
+### Analytics
 
-🗄️ Database & Data Integrity
+* View total number of applications
+* Track applications by status
+* Monitor job search progress
 
-PostgreSQL relational database
-Fully normalized schema design
-Foreign key constraints to maintain relationships
+### Database
 
--Efficient SQL JOIN queries to fetch combined data from:
+* PostgreSQL relational database
+* Normalized database schema
+* Foreign key relationships for data integrity
+* Efficient SQL queries using JOIN operations
 
- Users
- Companies
- Jobs
- Applications
+## Tech Stack
 
-📊 Application Management
+* Node.js
+* Express.js
+* PostgreSQL
+* Express Session
+* Bcrypt
+* UUID
+* Dotenv
 
-Add and manage job application records
+## What I Learned
 
-Update application status:
-Applied
-Interview
-Selected
-Rejected
-Delete applications
-
-View statistics grouped by status
-
-⚙️ RESTful API
-
-Clean REST architecture
-Full CRUD operations
-Structured routes and middleware
-Error handling and validation
-
-🛠️ Tech Stack
-
-Category	Technology
-Runtime	Node.js
-Framework	Express.js
-Database	PostgreSQL
-Authentication	Express-session, Bcrypt
-Utilities	UUID, Dotenv
+* RESTful API development
+* Backend authentication and authorization
+* Database design and SQL queries
+* Session management
+* CRUD operations
+* Secure password handling
+* Building scalable backend applications
